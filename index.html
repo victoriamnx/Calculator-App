@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./components/images/favicon-32x32.png"
+    />
+    <link id="theme-link" rel="stylesheet" href="default-theme.css" />
+    <!-- <link id="theme2-link" rel="stylesheet" type="text/css" href="theme2.css" />
+    <link id="theme3-link" rel="stylesheet" type="text/css" href="theme3.css" /> -->
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <h1>calc</h1>
+
+        <div class="theme-toggle">
+          <label class="custom-radio-button">
+            <input
+              id="default-theme"
+              name="toggle-state"
+              type="radio"
+              checked
+            />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="custom-radio-button">
+            <input id="theme2" name="toggle-state" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="custom-radio-button">
+            <input id="theme3" name="toggle-state" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <form>
+        <div class="display">
+          <input type="text" name="display" />
+        </div>
+        <div class="calculator">
+          <div class="numbers">
+            <input type="button" value="7" onclick="display.value += '7'" />
+            <input type="button" value="8" onclick="display.value += '8'" />
+            <input type="button" value="9" onclick="display.value += '9'" />
+            <input
+              id="del"
+              type="button"
+              value="DEL"
+              onclick="display.value = display.value.toString().slice(0, -1)"
+            />
+          </div>
+          <div class="numbers">
+            <input type="button" value="4" onclick="display.value += '4'" />
+            <input type="button" value="5" onclick="display.value += '5'" />
+            <input type="button" value="6" onclick="display.value += '6'" />
+            <input type="button" value="+" onclick="display.value += '+'" />
+          </div>
+          <div class="numbers">
+            <input type="button" value="1" onclick="display.value += '1'" />
+            <input type="button" value="2" onclick="display.value += '2'" />
+            <input type="button" value="3" onclick="display.value += '3'" />
+            <input type="button" value="-" onclick="display.value += '-'" />
+          </div>
+          <div class="numbers">
+            <input type="button" value="0" onclick="display.value += '0'" />
+            <input type="button" value="." onclick="display.value += '.'" />
+            <input type="button" value="/" onclick="display.value += '/'" />
+            <input type="button" value="*" onclick="display.value += '*'" />
+          </div>
+          <div class="numbers">
+            <input
+              id="reset"
+              type="button"
+              value="RESET"
+              onclick="display.value = ''"
+            />
+            <input
+              id="equal"
+              type="button"
+              value="="
+              onclick="display.value = eval(display.value)"
+              class="equal"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
