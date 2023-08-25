@@ -1,7 +1,7 @@
 const themeLinks = {
-  "default-theme": "default-theme.css",
-  theme2: "theme2.css",
-  theme3: "theme3.css",
+  "default-theme": "css/default-theme.css",
+  theme2: "css/theme2.css",
+  theme3: "css/theme3.css",
 };
 
 const toggleInputs = document.querySelectorAll('input[name="toggle-state"]');
