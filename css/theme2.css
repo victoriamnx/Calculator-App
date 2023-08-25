@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #36362c;
+  background: #e6e6e6;
+  font-family: "League Spartan", sans-serif;
+}
+
+.top-bar {
+  width: 540px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+  user-select: none;
+}
+
+#theme {
+  width: 71px;
+  position: relative;
+  left: 261px;
+  top: -5px;
+  user-select: none;
+}
+
+h3 {
+  color: #36362c;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: "League Spartan", sans-serif;
+}
+
+#types {
+  top: -29px;
+  left: 161px;
+  width: 71px;
+  display: flex;
+  user-select: none;
+  position: relative;
+  justify-content: space-around;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  border-radius: 13px;
+  background: #d2cdcd;
+  flex-shrink: 0;
+  border: none;
+}
+
+.custom-radio-button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  /*opacity: 0;*/
+  transition: opacity 0.3s ease;
+  opacity: 0.3;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #d03f2f;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #d03f2f;
+}
+
+.custom-radio-button input:not(:checked) + .checkmark:hover {
+  background-color: #d03f2f;
+}
+
+.display input {
+  width: 540px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #eee;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  font-family: "League Spartan", sans-serif;
+  color: #36362c;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.933px;
+  padding: 32px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 540px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d2cdcd;
+  gap: 24px;
+}
+
+.calculator input {
+  width: 101px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e5e4e1;
+  box-shadow: 0px -4px 0px 0px #a79e91 inset;
+  font-family: "League Spartan", sans-serif;
+  color: #36362c;
+  font-size: 32px;
+  border: none;
+  outline: none;
+}
+
+.numbers {
+  display: flex;
+  gap: 25px;
+}
+
+#del {
+  width: 101px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  color: white;
+  cursor: pointer;
+}
+
+#del:hover {
+  transition: 0.5s;
+  background: #62b5bc;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+}
+
+#reset {
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  color: white;
+  border-radius: 10px;
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  cursor: pointer;
+}
+
+#reset:hover {
+  transition: 0.5s;
+  background: #62b5bc;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+}
+
+#equal {
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #c85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+  color: white;
+  cursor: pointer;
+}
+
+#equal:hover {
+  transition: 0.5s;
+  background: #ff8a38;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #ff8a38;
+  font-family: "League Spartan", sans-serif;
+}
+
+a:link {
+  color: #ff8a38;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff8a38;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #873901;
+  text-decoration: underline;
+}

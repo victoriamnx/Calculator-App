@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffe53d;
+  background: #17062a;
+  font-family: "League Spartan", sans-serif;
+}
+
+.top-bar {
+  width: 540px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+  user-select: none;
+}
+
+#theme {
+  width: 71px;
+  position: relative;
+  left: 261px;
+  top: -5px;
+  user-select: none;
+}
+
+h3 {
+  color: #ffe53d;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: "League Spartan", sans-serif;
+}
+
+#types {
+  top: -29px;
+  left: 161px;
+  width: 71px;
+  display: flex;
+  user-select: none;
+  position: relative;
+  justify-content: space-around;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  border-radius: 13px;
+  background: #1e0936;
+  flex-shrink: 0;
+  border: none;
+}
+
+.custom-radio-button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  /*opacity: 0;*/
+  transition: opacity 0.3s ease;
+  opacity: 0.3;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #00ded0;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #00ded0;
+}
+
+.custom-radio-button input:not(:checked) + .checkmark:hover {
+  background-color: #00ded0;
+}
+
+.display input {
+  width: 540px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #1e0936;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  font-family: "League Spartan", sans-serif;
+  color: #ffe53d;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.933px;
+  padding: 32px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 540px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #1e0936;
+  gap: 24px;
+}
+
+.calculator input {
+  width: 101px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e5e4e1;
+  background: #331c4d;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+  color: #ffe53d;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  border: none;
+  outline: none;
+}
+
+.numbers {
+  display: flex;
+  gap: 25px;
+}
+
+#del {
+  width: 101px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  color: white;
+  cursor: pointer;
+}
+
+#del:hover {
+  transition: 0.5s;
+  background: #8631af;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+
+#reset {
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  color: white;
+  border-radius: 10px;
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+  cursor: pointer;
+}
+
+#reset:hover {
+  transition: 0.5s;
+  background: #8631af;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+
+#equal {
+  width: 227px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+  color: #1a2327;
+  cursor: pointer;
+}
+
+#equal:hover {
+  transition: 0.5s;
+  background: #93fff8;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #8631af;
+  font-family: "League Spartan", sans-serif;
+}
+
+a:link {
+  color: #8631af;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8631af;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #be15f4;
+  text-decoration: underline;
+}

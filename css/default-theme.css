@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background: #3a4663;
+  font-family: "League Spartan", sans-serif;
+}
+
+.top-bar {
+  width: 540px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  user-select: none;
+}
+
+#theme {
+  width: 71px;
+  position: relative;
+  left: 261px;
+  top: -5px;
+  user-select: none;
+}
+
+h3 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: "League Spartan", sans-serif;
+}
+
+#types {
+  top: -29px;
+  left: 161px;
+  width: 71px;
+  display: flex;
+  user-select: none;
+  position: relative;
+  justify-content: space-around;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  background: #242d44;
+  border: none;
+}
+
+.custom-radio-button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  /*opacity: 0;*/
+  transition: opacity 0.3s ease;
+  opacity: 0.3;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #d03f2f;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+  z-index: 2;
+  background-color: #d03f2f;
+}
+
+.custom-radio-button input:not(:checked) + .checkmark:hover {
+  background-color: #d03f2f;
+}
+
+.display input {
+  width: 540px;
+  height: 128px;
+  border-radius: 10px;
+  background: #181f33;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  text-align: right;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.933px;
+  padding: 32px;
+}
+
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 540px;
+  height: 480px;
+  border-radius: 10px;
+  background: #242d44;
+  gap: 24px;
+}
+
+.calculator input {
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  background: #eae3dc;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+  font-family: "League Spartan", sans-serif;
+  color: #434a59;
+  font-size: 32px;
+  border: none;
+  outline: none;
+}
+
+.numbers {
+  display: flex;
+  gap: 25px;
+}
+
+#del {
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  background: #647198;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+#del:hover {
+  transition: 0.5s;
+  background: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+#reset {
+  width: 227px;
+  height: 64px;
+  border-radius: 10px;
+  color: white;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  cursor: pointer;
+}
+
+#reset:hover {
+  transition: 0.5s;
+  background: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+#equal {
+  width: 227px;
+  height: 64px;
+  border-radius: 10px;
+  background: #d03f2f;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+#equal:hover {
+  transition: 0.5s;
+  background: #f96b5b;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: #242d44;
+  font-family: "League Spartan", sans-serif;
+}
+
+a:link {
+  color: #242d44;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #242d44;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a2b2e1;
+  text-decoration: underline;
+}
