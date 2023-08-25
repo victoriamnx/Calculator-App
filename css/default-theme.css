@@ -230,3 +230,115 @@ a:hover {
   color: #a2b2e1;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+  .top-bar {
+    width: 20rem;
+    height: 2.625rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    user-select: none;
+  }
+
+  #theme {
+    width: 71px;
+    position: relative;
+    left: 114px;
+    top: -5px;
+    user-select: none;
+  }
+
+  #types {
+    top: -29px;
+    left: 90px;
+    width: 71px;
+    display: flex;
+    user-select: none;
+    position: relative;
+    justify-content: space-around;
+    font-family: "League Spartan", sans-serif;
+    font-size: 12px;
+  }
+
+  .display input {
+    width: 20.4375rem;
+    height: 5.5rem;
+    border-radius: 10px;
+    background: #181f33;
+    margin-bottom: 24px;
+    border: none;
+    outline: none;
+    font-family: "League Spartan", sans-serif;
+    color: #fff;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.933px;
+    padding: 32px;
+  }
+
+  .calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20.4375rem;
+    height: 26.25rem;
+    border-radius: 10px;
+    background: #242d44;
+    gap: 0.81rem;
+  }
+
+  .calculator input {
+    width: 3.75rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #eae3dc;
+    box-shadow: 0px -4px 0px 0px #b3a497 inset;
+    font-family: "League Spartan", sans-serif;
+    color: #434a59;
+    font-size: 32px;
+    border: none;
+    outline: none;
+  }
+
+  .numbers {
+    display: flex;
+    gap: 0.81rem;
+  }
+
+  #del {
+    width: 3.75rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #647198;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    box-shadow: 0px -4px 0px 0px #414e73 inset;
+  }
+
+  #reset {
+    width: 8.3125rem;
+    height: 4rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.25rem;
+    background: #647198;
+    box-shadow: 0px -4px 0px 0px #414e73 inset;
+    cursor: pointer;
+  }
+
+  #equal {
+    width: 8.3125rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #d03f2f;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    box-shadow: 0px -4px 0px 0px #93261a inset;
+  }
+}
