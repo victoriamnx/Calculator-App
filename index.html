@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,9 +10,7 @@
       sizes="32x32"
       href="./components/images/favicon-32x32.png"
     />
-    <link id="theme-link" rel="stylesheet" href="default-theme.css" />
-    <!-- <link id="theme2-link" rel="stylesheet" type="text/css" href="theme2.css" />
-    <link id="theme3-link" rel="stylesheet" type="text/css" href="theme3.css" /> -->
+    <link id="theme-link" rel="stylesheet" href="css/default-theme.css" />
 
     <title>Frontend Mentor | Calculator app</title>
   </head>
@@ -21,7 +18,14 @@
     <div class="container">
       <div class="top-bar">
         <h1>calc</h1>
-
+        <div id="theme">
+          <h3>THEME</h3>
+        </div>
+        <div id="types">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
         <div class="theme-toggle">
           <label class="custom-radio-button">
             <input
@@ -74,8 +78,8 @@
             <input type="button" value="-" onclick="display.value += '-'" />
           </div>
           <div class="numbers">
-            <input type="button" value="0" onclick="display.value += '0'" />
             <input type="button" value="." onclick="display.value += '.'" />
+            <input type="button" value="0" onclick="display.value += '0'" />
             <input type="button" value="/" onclick="display.value += '/'" />
             <input type="button" value="*" onclick="display.value += '*'" />
           </div>
@@ -100,11 +104,18 @@
 
     <script src="index.js"></script>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <div class="attribution">
+      <span>Challenge by&nbsp;</span
+      ><a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        title="Frontend Mentor site"
+        >Frontend Mentor.
+      </a>
+      <span> Coded by&nbsp;</span
+      ><a href="https://github.com/victoriamnx" title="Github profile"
+        >victoriamnx.</a
+      >
+    </div>
   </body>
 </html>
