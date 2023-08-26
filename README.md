@@ -21,7 +21,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 # Links
 
-- Solution URL: [Coming soon...](.)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/calculator-app-BM-1lYcYm_)
 - Live Site URL: [Calculator app](https://victoriamnx.github.io/Calculator-App/)
 
 # Built with
